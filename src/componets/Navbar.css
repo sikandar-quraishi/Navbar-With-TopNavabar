@@ -1,0 +1,208 @@
+.nav__bar {
+  background-color: #0071ce;
+  width: 100%;
+  height: 55px;
+  padding: 15px;
+  align-self: center;
+}
+
+.container {
+  margin: 0 20%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image__wrapper img {
+  width: 6em;
+}
+
+.right__items {
+  display: flex;
+}
+
+.first__dropdown {
+  width: 7em;
+}
+
+input,
+ul.submenu {
+  display: none;
+}
+
+/*position the label*/
+label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+label i {
+  color: #ffe800;
+}
+
+/*show the submenu when input is checked*/
+input:checked ~ ul.submenu {
+  display: block;
+  width: 15em;
+  background: #f6f5f5fa;
+  margin-top: 21px;
+}
+
+.submenu li {
+  list-style: none;
+  margin-left: -39px;
+}
+
+.btns__wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sign__up {
+  background: #fff;
+  color: #0071ce;
+  border-radius: 20px;
+  border: 2px solid #0071ce;
+  padding: 3px 12px;
+  outline: none;
+}
+
+.sign__up:hover {
+  background: #0071ce;
+  color: #fff;
+}
+
+.sign__in {
+  background: #0071ce;
+  color: #ffffff;
+  border-radius: 20px;
+  border: 2px solid #0071ce;
+  padding: 3px 12px;
+  outline: none;
+}
+
+.sign__in:hover {
+  color: #0071ce;
+  background-color: #fff;
+}
+
+.submenu li div {
+  color: black;
+  font-weight: 600;
+  border-bottom: 1px solid lightgray;
+  padding: 8px;
+}
+
+/* search box */
+
+input[type="text"] {
+  width: 138px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #ffe800;
+  background-image: url("https://www.freeiconspng.com/uploads/zoom-icon-png-26.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 6px 20px 4px 20px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  display: block;
+  outline: none;
+  text-transform: uppercase;
+}
+
+input[type="text"]:focus {
+  width: 100%;
+  background-color: #fff;
+}
+
+.search__box__wrapper {
+  margin-left: 2em;
+}
+
+.cart {
+  position: absolute;
+  right: -3px;
+  background: #83b2d88a;
+  line-height: 3px;
+  padding: 27px;
+  top: 35px;
+  font-size: 1.5rem !important;
+  padding-right: 45px;
+  color: #fff;
+}
+
+.cheet {
+  position: absolute;
+  right: 8px;
+  line-height: 3px;
+  padding: 6px;
+  top: 41px;
+  font-size: 0.7rem !important;
+  color: #fff;
+  background: red;
+  border-radius: 49%;
+  height: 20px;
+  line-height: 7px;
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    margin: 0 5%;
+  }
+
+  input[type="text"] {
+    width: 50px;
+    margin-right: 4em;
+  }
+
+  label {
+    display: none;
+  }
+
+  .first__dropdown {
+    width: 0em;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .container {
+    margin: 0 0%;
+  }
+
+  input[type="text"] {
+    width: 80px;
+    margin-right: 4em;
+  }
+
+  .first__dropdown {
+    width: 0em;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  input[type="text"] {
+    width: 80px;
+    margin-right: 4em;
+  }
+
+  .first__dropdown {
+    width: 0em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  s input[type="text"] {
+    width: 130px;
+    margin-right: 4em;
+  }
+}
