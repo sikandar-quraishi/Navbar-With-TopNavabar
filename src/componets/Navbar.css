@@ -23,8 +23,11 @@
   display: flex;
 }
 
+.second__dropdown{
+  width: 6em !important;
+}
 .first__dropdown {
-  width: 7em;
+  width: 8em;
 }
 
 input,

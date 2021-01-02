@@ -19,7 +19,7 @@ class Navbar extends Component {
               </div>
 
               <div className="right__items">
-                <div className="first__dropdown">
+                <div className="first__dropdown second__dropdown">
                   <input id="check01" type="checkbox" name="menu" />
                   <label for="check01">
                     <i className="angle down icon"></i>Help
